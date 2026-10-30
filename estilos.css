@@ -1,0 +1,234 @@
+:root {
+    --cor-fundo: #f4f2e9;
+    --cor-fundo-escura: #dfe8d6;
+    --cor-primaria: #1d5c4d;
+    --cor-primaria-escura: #123f38;
+    --cor-texto: #1f2c29;
+    --cor-titulo: #174f45;
+    --cor-link: #1b6d5d;
+    --cor-link-hover: #103f39;
+    --cor-borda: #d9e5d5;
+    --espacamento-base: 24px;
+    --espacamento-grande: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: var(--espacamento-grande);
+    background: linear-gradient(180deg, var(--cor-fundo) 0%, var(--cor-fundo-escura) 100%);
+    color: var(--cor-texto);
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+}
+
+header,
+main,
+footer {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px 16px 0 0;
+    padding: 1.5rem var(--espacamento-base) 1rem;
+    box-shadow: 0 8px 25px rgba(18, 63, 56, 0.04);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    background: rgba(29, 92, 77, 0.08);
+    border: 1px solid var(--cor-borda);
+    border-radius: 999px;
+    padding: 0.75rem 1rem;
+    display: inline-block;
+}
+
+main {
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid var(--cor-borda);
+    border-top: none;
+    border-radius: 0 0 16px 16px;
+    padding: var(--espacamento-base);
+    box-shadow: 0 8px 25px rgba(18, 63, 56, 0.08);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0 0;
+    color: var(--cor-primaria-escura);
+    font-weight: 600;
+}
+
+h1, h2, h3 {
+    color: var(--cor-titulo);
+    font-family: Impact, "Arial Black", sans-serif;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 var(--espacamento-base);
+    font-size: 2.6rem;
+}
+
+h2 {
+    margin-top: var(--espacamento-grande);
+    border-bottom: 2px solid var(--cor-borda);
+    padding-bottom: 0.4rem;
+}
+
+p, li, figcaption, td, th {
+    font-size: 1.05rem;
+}
+
+p {
+    margin: 0.8rem 0;
+}
+
+ul, ol {
+    padding-left: 1.6rem;
+    margin: 1rem 0;
+}
+
+li + li {
+    margin-top: 0.5rem;
+}
+
+a {
+    color: var(--cor-link);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+a:hover,
+a:focus {
+    color: var(--cor-link-hover);
+    text-decoration: underline;
+}
+
+figure {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid var(--cor-primaria);
+}
+
+figcaption {
+    margin-top: 0.8rem;
+    color: var(--cor-primaria-escura);
+    font-style: italic;
+}
+
+strong {
+    color: var(--cor-primaria-escura);
+}
+
+em {
+    color: var(--cor-primaria);
+    font-style: italic;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background: rgba(255, 255, 255, 0.55);
+}
+
+th, td {
+    border: 1px solid var(--cor-borda);
+    padding: 0.8rem;
+    text-align: left;
+}
+
+thead th {
+    background: var(--cor-primaria);
+    color: #ffffff;
+}
+
+caption {
+    color: var(--cor-primaria-escura);
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+    text-align: left;
+}
+
+form {
+    display: grid;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.campo {
+    display: grid;
+    gap: 0.45rem;
+}
+
+label {
+    color: var(--cor-primaria-escura);
+    font-weight: 700;
+}
+
+input,
+select,
+textarea,
+button {
+    font: inherit;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.8rem 0.9rem;
+    border: 1px solid var(--cor-borda);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--cor-texto);
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 0.9rem 1.2rem;
+    background: var(--cor-primaria);
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover,
+button:focus {
+    background: var(--cor-primaria-escura);
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
