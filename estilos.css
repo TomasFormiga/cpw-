@@ -259,6 +259,7 @@ button:focus {
 .sessao {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     gap: 24px;
 }
 
