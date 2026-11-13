@@ -2,6 +2,37 @@ body {
   background-color: #f4f7fa;
 }
 
+header.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header.row > .col-12,
+header.row > [class*="col-md-"] {
+  min-width: 0;
+}
+
+@media (max-width: 767.98px) {
+  header.row > .col-12,
+  header.row > [class*="col-md-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  header.row > .col-md-8 {
+    flex: 0 0 66.666666%;
+    max-width: 66.666666%;
+  }
+
+  header.row > .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
 h1 {
   color: #215a89;
 }
