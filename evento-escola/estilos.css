@@ -1,0 +1,44 @@
+﻿body {
+  background: linear-gradient(180deg, #f5f9ff 0%, #edf3ff 100%);
+  color: #1d2b3a;
+}
+
+h1,
+h2,
+.card-title {
+  color: #1d4e89;
+}
+
+.lead {
+  color: #294b6d;
+}
+
+.card {
+  border: 0;
+  box-shadow: 0 0.5rem 1rem rgba(17, 54, 92, 0.08);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.btn-primary {
+  background-color: #1d4e89;
+  border-color: #1d4e89;
+}
+
+.btn-primary:hover {
+  background-color: #163d68;
+  border-color: #163d68;
+}
+
+#perguntas {
+  border: 1px solid #dfeaf7;
+}
